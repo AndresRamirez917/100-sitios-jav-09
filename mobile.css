@@ -1,0 +1,68 @@
+#showcase {
+    float: none;
+    width: 100%;
+}
+
+#navbar {
+    padding-bottom: 0px;
+    text-align: center;
+  }
+
+  #showcase .logo {
+    float: none;
+    text-align: center;
+  }
+
+  h6 {
+    font-size: 30px;
+  }
+
+  #navbar {
+    float: none;
+  }
+
+#navbar ul{
+    float: none;
+    width: 100%;
+}
+
+#navbar ul li {
+float: none;
+display: inline-block;
+    text-align: center;
+}
+
+#mainheader  {
+    text-align: center;
+}
+
+#mainheader h6 {
+    margin-top: 40px;
+}
+
+/* features */
+.features-row .card-1 {
+    float: none;
+    width: 100%;
+}
+
+.features-row .card-2 {
+    float: none;
+    width: 100%;
+}
+
+/* about */
+
+#about .about-left {
+    float: none;
+    width: 100%;
+}
+
+#about .about-rigth {
+    float: none;
+    width: 100%;
+}
+
+#contact form {
+    width: 80%;
+}
