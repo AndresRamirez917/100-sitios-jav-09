@@ -43,19 +43,29 @@ const valida = (e) => {
     const email = document.getElementById('email')
     const mensaje = document.getElementById('mensaje')
     let arr = [];
-    arr.push(nombre, email, mensaje)
-    console.log(arr)
-    console.log("madre")
+    let arr2 = ["nombre", "email", "mensaje"]
+
+    arr.push(nombre, email, mensaje,)
     for(i = 0; i < arr.length; i++){
-        console.log(arr[i])
-        if(arr[i].value == ""){
-            alert("El campo no puede estar vacío")
+        for(i = 0; i < arr2.length; i++){
+            if(arr[i].value == ""){
+                alert(`El campo ${arr2[i]} no puede estar vacío`)
+                return false;
+            }
+        }
+        if(!email_valido(email.value)){
+            alert("El formato de correo no es válido")
             return false;
         }
-        //return true;
+       nombre.value = ""
+       email.value = ""
+       mensaje.value = ""
+        return true;
     }
 
 }
-
+const email_valido = email => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
 getData()
 btn_validar.addEventListener("click", valida)
