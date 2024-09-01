@@ -42,14 +42,17 @@ const valida = (e) => {
     const nombre = document.getElementById('nombre')
     const email = document.getElementById('email')
     const mensaje = document.getElementById('mensaje')
+    const fecha = document.getElementById('fecha')
+    const hora = document.getElementById('hora')
     let arr = [];
-    let arr2 = ["nombre", "email", "mensaje"]
+    let arr2 = ["nombre", "email", "fecha", "hora", "mensaje"]
 
-    arr.push(nombre, email, mensaje,)
+    arr.push(nombre, email, fecha, hora, mensaje )
     for(i = 0; i < arr.length; i++){
         for(i = 0; i < arr2.length; i++){
             if(arr[i].value == ""){
                 alert(`El campo ${arr2[i]} no puede estar vacío`)
+                console.log(arr2[i])
                 return false;
             }
         }
@@ -57,9 +60,11 @@ const valida = (e) => {
             alert("El formato de correo no es válido")
             return false;
         }
-       nombre.value = ""
-       email.value = ""
-       mensaje.value = ""
+       nombre.value = "";
+       email.value = "";
+       fecha.value = "";
+       hora.value  = "";
+       mensaje.value = "";
         return true;
     }
 

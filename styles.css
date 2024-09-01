@@ -18,6 +18,12 @@ body {
     padding: 0 20px;
 }
 
+.flex {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+
 #showcase {
     float: left;
     height: 80vh;
@@ -157,6 +163,10 @@ a {
   #contact form {
     width: 40%;
     margin: 0 auto;
+  }
+
+  form .flexbox {
+    flex: 1;
   }
 
   form label {
